@@ -1,0 +1,426 @@
+   1  sudo apt-get update
+    2  sudo apt-get install curl
+    3  \curl -L https://get.rvm.io | bash -s stable --ruby
+    4  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    5  \curl -L https://get.rvm.io | bash -s stable --ruby
+    6  sudo apt-get install nodejs
+    7  gem update --system
+    8  sudo apt-get install nodejs
+    9  sudo apt-get install nodejs
+   10  echo $PATH
+   11  export PATH=$PATH:/sbin/:/usr/sbin/
+   12  echo $PATH
+   13  gem -v
+   14  gem -v
+   15  ruby -v 
+   16  rvm
+   17  rvm -v
+   18  rvm list
+   19  rvm use 2.2.1
+   20  rvm use 2.2.1
+   21  rvm use 2.2.1
+   22  ruby -v
+   23  ls
+   24  ruby -v
+   25  gem -v
+   26  rvm gemset list
+   27  gem install bundler
+   28  gem install nokogiri
+   29  $ rvm use ruby-2.3.0@rails4.2 --create
+   30  gem install rails 
+   31  rails new referral
+   32  sudo apt-get install kate 
+   33  cd referral/
+   34  rails server
+   35  sudo apt-get install git
+   36  rails server
+   37  ls
+   38  cd referral/
+   39  rails server
+   40  cd referral/
+   41  rails generate scaffold clinic :string, referring_clinician :string, receiving_clinician :string, urn string:   
+   42  rake db:migrate
+   43  rake db:migrate
+   44  rails new referrals
+   45  sudo add-apt-repository ppa:gambas-team/gambas-daily
+   46  sudo apt-get update
+   47  sudo add-apt-repository ppa:gambas-team/gambas3
+   48  sudo apt-get update
+   49  sudo apt-get install gambas3
+   50  iptraf
+   51  sudo apt-get install iptraf
+   52  iptraf
+   53  sudo iptraf
+   54  sudo iptraf
+   55  cd ..
+   56  cd ..
+   57  ls
+   58  sudo dpkg epson-inkjet-printer-201211w-1.0.0-1lsb3.2.x86_64.rpm
+   59  sudo dpkg -i epson-inkjet-printer-201211w-1.0.0-1lsb3.2.x86_64.rpm
+   60  alien
+   61  sudo apt-get install alien
+   62  alien -ck alien -ck epson-inkjet-printer-201211w-1.0.0-1lsb3.2.x86_64.rpm
+   63  sudo alien -ck epson-inkjet-printer-201211w-1.0.0-1lsb3.2.x86_64.rpm
+   64  sudo dpkg -i epson-inkjet-printer-201211w_1.0.0-1lsb3.2_amd64.deb
+   65  cd /
+   66  cd etc
+   67  ls
+   68  cd ghostscript/cd cps
+   69  cd cups
+   70  ls
+   71  gedit printers.conf
+   72  kate printers.conf
+   73  suco kate printers.conf
+   74  sudo kate printers.conf
+   75  sudo apt-get install -f
+   76  sudo npm install http-server -g
+   77  sudo npm install http-server -g
+   78  cd ..
+   79  cd Aurelia/
+   80  http-server -o -c-1
+   81  sudo http-server -o -c-1
+   82  ls
+   83  http-server -o -c-1
+   84  sudo http-server -o -c-1
+   85  npm install http-server -g
+   86  sudo npm install http-server -g
+   87  http-server -o -c-1
+   88  sudo http-server -o -c-1
+   89  http-server
+   90  cd ../Aurelia/
+   91  au new
+   92  node --harmony app.js
+   93  ls
+   94  node --harmony /src/app.js
+   95  node -v
+   96  node upgrade
+   97  node update
+   98  sudo npm cache clean -f
+   99  sudo npm install -g n
+  100  sudo n stable
+  101  node -v
+  102  au new
+  103  ls
+  104  cd todos/
+  105  au run --watch
+  106  au run --watch
+  107  au run --watch
+  108  au run --watch
+  109  au new
+  110  au run --watch
+  111  cd ..
+  112  ls
+  113  au new 
+  114  au run --watch
+  115  cd eye
+  116  au run --watch
+  117  au run --watch
+  118  au run --watch
+  119  au run --watch
+  120  sudo apt-get install nodejs
+  121  sudo apt-get install npm
+  122  sudo ln -s /usr/bin/nodejs /usr/bin/node
+  123  sudo npm install jspm@0.16.15 -g 
+  124  cd ..
+  125  ls
+  126  cd Aurelia/
+  127  au new todos
+  128  au new
+  129  aurelia new 
+  130  sudo npm install -g aurelia-cli
+  131  au new todos
+  132  au new
+  133  sudo npm install jspm@0.16.15 -g 
+  134  au new
+  135  npm install http-server -g
+  136  sudo npm install http-server -g
+  137  http-server -o -c-1
+  138  http-server -o -c-1
+  139  ls
+  140  cd ..
+  141  cd Aurelia/
+  142  ls
+  143  cd eye
+  144  ls
+  145  http-server -o -c-1
+  146  http-server -o -c-1
+  147  http-server -o -c-1
+  148  http-server -o -c-1
+  149  sudo jspm install bootstrap
+  150  jspm install bootstrap
+  151  sudo jspm install bootstrap
+  152  npm install jspm --save-dev
+  153  jspm install bootstrap
+  154  cd ..
+  155  cd Aurelia/eye
+  156  jspm install bootstrap
+  157  npm install jspm --save-dev
+  158  jspm install bootstrap
+  159  sudo jspm install bootstrap
+  160  npm install aurelia-fetch-client
+  161  cd D
+  162  cd ..
+  163  cd DMO_team/
+  164  rails server
+  165  ls
+  166  ls
+  167  cd ..
+  168  mkdir DMO_team
+  169  cd DMO_team/
+  170  git clone https://github.com/richardhosking/DMO_team
+  171  cd ..
+  172  rmdir DMO_team/
+  173  git clone https://github.com/richardhosking/DMO_team
+  174  ls
+  175  cd DMO_team/
+  176  rails server
+  177  bundle install
+  178  rake db:migrate
+  179  rails generate migration delete_class_from_users remove_column :class, add_column :privileges 
+  180  rake db:migrate
+  181    rake db:rollback
+  182    rake db:rollback
+  183  rake db:migrate
+  184  rails generate controller Sessions new create destroy
+  185  rails generate controller Admin index
+  186  ls
+  187  cd Desktop
+  188  ls
+  189  cd programming/
+  190  ls
+  191  linux -v
+  192  sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts
+  193  cd DMO_team/
+  194  rails server
+  195  cd DMO_team/
+  196  cd DMO_team/
+  197  cd DMO_team/
+  198  rails server
+  199  cd DMO_team/
+  200  rails server
+  201  rails server
+  202  rails server
+  203  rails server
+  204  rails server
+  205  rails server
+  206  cd ..
+  207  cd DMO_team\ /
+  208  rails server
+  209  rails new DMO_TeamV2
+  210  bundle install
+  211  bundle install
+  212  cd DMO_team/
+  213  rake routes
+  214  cd ..
+  215  cd DMO_team\ /
+  216  ls
+  217  cd DMO_team\ /
+  218  ls
+  219  rails new DMO_TeamV2
+  220  cd ..
+  221  rails new DMO_TeamV2
+  222  bundle install --without production
+  223  cd DMO_TeamV2/
+  224  bundle install --without production
+  225  bundle update
+  226  rvm
+  227   curl -L https://get.rvm.io | bash -s stable --autolibs=enabled [--ruby] [--rails] [--trace]
+  228  rvm-installer stable --ruby --rails
+  229  rvm stable --ruby --rails
+  230  ruby -v
+  231  rvm upgrade
+  232  rvm upgrade * 2.2
+  233  ruby -v
+  234  rails -v
+  235  rails --version
+  236  rvm get stable
+  237  rvm list known
+  238  rvm install 2.4
+  239  gem update --system
+  240  bundle update rails
+  241  sudo apt-get install bundler
+  242  bundle update rails
+  243  sudo bundle update rails
+  244  bundle install
+  245  ls
+  246  ruby -v
+  247  gem 'rails', '>= 5.0.0.rc2', '< 5.1'
+  248  bundle update rails
+  249  undler -v
+  250  bundler -v
+  251  bundle -v
+  252  benv install 2.3.1
+  253  rbenv install 2.3.1
+  254  sudo apt-get install rbenv
+  255  rvm upgarde
+  256  rvm upgrade
+  257  rvm -v
+  258  bundle update rails
+  259  bundle install
+  260  cd DMO_TeamV2/
+  261  ls
+  262  rvm bundler
+  263  rvm usage
+  264  bundle install
+  265  bundle update
+  266  gem install rack -v '2.0.1'
+  267  rvm ruby
+  268  ruby -v
+  269  cd DMO_TeamV2/
+  270  ruby -v
+  271  cd DMO_TeamV2/
+  272  bundle install
+  273  bundle update rails
+  274  bundle update rails
+  275  bundle install
+  276  bundle install
+  277  ruby -v
+  278  rails server
+  279  rails -v
+  280  cd ..
+  281  ls
+  282  cd V1_DMO_team/
+  283  rails server
+  284  rvm
+  285  rvm current
+  286  rvm rubies
+  287  rvm ruby
+  288  rvm install rails
+  289  gem -v
+  290  gem update --system
+  291  rvm gemset list
+  292  rvm gemset use global
+  293  rvm gemset list
+  294  gem outdated
+  295  gem update
+  296  gem install nokogiri
+  297  rvm use ruby2.3.1@rails 4.2 --create
+  298  rvm use ruby-2.3.1@rails 4.2 --create
+  299  rvm use ruby-2.3.1@rails4.2 --create
+  300  ruby -v
+  301  rvm ruby list
+  302  ruby list
+  303  rvm all do ruby list
+  304  rvm use ruby-2.4.0@rails5.0 --create
+  305  rvm use ruby-2.4.0-rc1@rails5.0 --create
+  306  gem install rails
+  307  rails -v
+  308  cd DMO_TeamV2/
+  309  bundle install
+  310  bundle install
+  311  bundle install
+  312  git init
+  313  git add -A
+  314  git commit -m "Second version of DMO Team management software initial commit"
+  315  git config -- global user.email "richardh@iinet.net.au"
+  316  git config --global user.email "richardh@iinet.net.au"
+  317  git config --global user.namel "Richard Hosking"
+  318  git commit -m "Second version of DMO Team management software initial commit"
+  319  git remote add origin github.com/richardhosking/DMO_TeamV2.git
+  320  git push -u origin --all
+  321  git remote add origin https://github.com/richardhosking/DMO_TeamV2.git
+  322  git push -u origin master
+  323  git push -u origin --all
+  324  git remote delete origin github.com/richardhosking/DMO_TeamV2.git
+  325  git remote remove origin github.com/richardhosking/DMO_TeamV2.git
+  326  git remote remove github.com/richardhosking/DMO_TeamV2.git
+  327  git remote remove origin github.com/richardhosking/DMO_TeamV2.git
+  328  git remote add origin https://github.com/richardhosking/DMO_TeamV2.git
+  329  git remote remove origin https://github.com/richardhosking/DMO_TeamV2.git
+  330  git remote remove origin https://github.com/richardhosking
+  331  git remote remove origin https://github.com
+  332  git remote remove https://github.com
+  333  git remote remove https://github.com/richardhosking
+  334  git remote remove https://github.com/richardhosking/DMO_TeamV2.git
+  335  git remote add origin https://github.com:richardhosking/DMO_TeamV2.git
+  336  git push -u origin --all
+  337  git remote rename github.com/richardhosking/DMO_TeamV2.git https://github.com:richardhosking/DMO_teamV2.git
+  338  git remote rename github.com/richardhosking/DMO_TeamV2.git https://github.com/richardhosking/DMO_teamV2.git
+  339    def hello
+  340      render html: "hello, world!"
+  341  cd DMO_TeamV2/
+  342  rails g controller foo bar baz
+  343  ls
+  344  rails generate controller foo bar baz
+  345  rails generate controller Foo bar baz
+  346  bundle install
+  347  rvm use ruby-2.4.0-rc1@rails5.0 --create
+  348  gem install rails
+  349  rails -v
+  350  rails generate controller Foo bar baz
+  351  rails destroy controller Foo 
+  352  cd DMO_TeamV2/
+  353  rails test
+  354  rails test
+  355   touch app/views/static_pages/about.html.erb
+  356  rails test
+  357  rails test
+  358  rails test
+  359  rails test
+  360  rails test
+  361  rails test
+  362  rails test
+  363  rails test
+  364  rails test
+  365  rails test
+  366  rails test
+  367  rails test
+  368  rails test
+  369  rails test
+  370  rails test
+  371  rails test
+  372  rails test
+  373  rails test
+  374  rails test
+  375  rails test
+  376  rails test
+  377  rails test
+  378  heroku login
+  379  sudo apt-reository "deb https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -  
+sudo apt-get update
+sudo apt-get install heroku
+  380  sudo apt-reository "deb https://cli-assets.heroku.com/apt/release.key | sudo apt-key add
+  381  sudo apt-reository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+  382  sudo apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+  383  sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+  384  curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+  385  sudo apt-get update
+  386  sudo apt-get install heroku
+  387  heroku login 
+  388  heroku create
+  389  git add remote https://git.heroku.com/shrouded-journey-36599.git
+  390  git push heroku master
+  391  heroku open
+  392  heroku logs --tail
+  393  heroku rename DMO-Team-mangement_S-ftware
+  394  heroku rename DMO-Team-mangement-Software
+  395  heroku rename DmoTeamMangementSoftware
+  396  heroku rename dmo-team-mangement-software
+  397  heroku help
+  398  heroku apps
+  399  git add -A
+  400  git commit -m "Static Pages"
+  401  git checkout master
+  402  git merge static-pages
+  403  git push
+  404  rails test
+  405  rails test
+  406  git push heroku
+  407  heroku test
+  408  rails test
+  409  bundle exec guard init
+  410  git add -A
+  411  git commit -m "Complete testing setup"
+  412  git checkout -b rails-flavoured-ruby
+  413  rails test
+  414  rails test
+  415  rails test
+  416  rails test
+  417  rails test
+  418  rails test
+  419  rails test
+  420  rails test
+  421  rails test
+  422  irb
+  423  history
+richard@MillsStRichard ~/Desktop/programming/DMO_TeamV2 $ 
