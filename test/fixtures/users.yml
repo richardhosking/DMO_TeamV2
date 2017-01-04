@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: name1
+  email: email@somedomain1.com
+  privileges: user
+
+two:
+  name: name2
+  email: email2@somedomain.com
+  privileges: admin
