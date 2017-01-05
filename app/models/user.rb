@@ -11,5 +11,6 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }
   
   validates :privileges, presence: true
+  PRIVILEGES_CATEGORY = %w(Admin DMO Clinician User Observer) # various user categories to enforce access levels 
   
 end
