@@ -2,28 +2,16 @@
 
 one:
   firstname: MyString
-  : 
   surname: MyString
-  : 
-  urn: MyString
-  : 
+  urn: Myring
   dd: MyString
-  : 
   mm: MyString
-  : 
   yyyy: MyString
-  : MyString
 
 two:
   firstname: MyString
-  : 
   surname: MyString
-  : 
   urn: MyString
-  : 
   dd: MyString
-  : 
   mm: MyString
-  : 
   yyyy: MyString
-  : MyString

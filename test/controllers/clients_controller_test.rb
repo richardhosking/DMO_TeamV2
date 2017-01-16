@@ -15,13 +15,6 @@ class ClientsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create client" do
-    assert_difference('Client.count') do
-      post clients_url, params: { client: { : @client., : @client., : @client., : @client., : @client., : @client., dd: @client.dd, firstname: @client.firstname, mm: @client.mm, surname: @client.surname, urn: @client.urn, yyyy: @client.yyyy } }
-    end
-
-    assert_redirected_to client_url(Client.last)
-  end
 
   test "should show client" do
     get client_url(@client)
@@ -33,12 +26,7 @@ class ClientsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update client" do
-    patch client_url(@client), params: { client: { : @client., : @client., : @client., : @client., : @client., : @client., dd: @client.dd, firstname: @client.firstname, mm: @client.mm, surname: @client.surname, urn: @client.urn, yyyy: @client.yyyy } }
-    assert_redirected_to client_url(@client)
-  end
-
-  test "should destroy client" do
+   test "should destroy client" do
     assert_difference('Client.count', -1) do
       delete client_url(@client)
     end

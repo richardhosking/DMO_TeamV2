@@ -15,14 +15,7 @@ class AssessmentsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create assessment" do
-    assert_difference('Assessment.count') do
-      post assessments_url, params: { assessment: { : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., diastolic: @assessment.diastolic, gluc: @assessment.gluc, hb: @assessment.hb, pulse: @assessment.pulse, resps: @assessment.resps, sats: @assessment.sats, systolic: @assessment.systolic, temp: @assessment.temp, weight: @assessment.weight } }
-    end
-
-    assert_redirected_to assessment_url(Assessment.last)
-  end
-
+  
   test "should show assessment" do
     get assessment_url(@assessment)
     assert_response :success
@@ -31,11 +24,6 @@ class AssessmentsControllerTest < ActionDispatch::IntegrationTest
   test "should get edit" do
     get edit_assessment_url(@assessment)
     assert_response :success
-  end
-
-  test "should update assessment" do
-    patch assessment_url(@assessment), params: { assessment: { : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., : @assessment., diastolic: @assessment.diastolic, gluc: @assessment.gluc, hb: @assessment.hb, pulse: @assessment.pulse, resps: @assessment.resps, sats: @assessment.sats, systolic: @assessment.systolic, temp: @assessment.temp, weight: @assessment.weight } }
-    assert_redirected_to assessment_url(@assessment)
   end
 
   test "should destroy assessment" do
