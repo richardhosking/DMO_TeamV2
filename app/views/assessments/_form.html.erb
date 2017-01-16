@@ -1,0 +1,63 @@
+<%= form_for(assessment) do |f| %>
+  <% if assessment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(assessment.errors.count, "error") %> prohibited this assessment from being saved:</h2>
+
+      <ul>
+      <% assessment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pulse %>
+    <%= f.text_field :pulse %>
+  </div>
+
+ 
+  <div class="field">
+    <%= f.label :resps %>
+    <%= f.text_field :resps %>
+  </div>
+
+   <div class="field">
+    <%= f.label :sats %>
+    <%= f.text_field :sats %>
+  </div>
+
+  <div class="field">
+    <%= f.label :temp %>
+    <%= f.text_field :temp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hb %>
+    <%= f.text_field :hb %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gluc %>
+    <%= f.text_field :gluc %>
+  </div>
+
+  <div class="field">
+    <%= f.label :systolic %>
+    <%= f.text_field :systolic %>
+  </div>
+
+  <div class="field">
+    <%= f.label :diastolic %>
+    <%= f.text_field :diastolic %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

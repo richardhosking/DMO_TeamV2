@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Waitlist</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th></th>
+      <th>Surname</th>
+      <th></th>
+      <th>Urn</th>
+      <th></th>
+      <th>Dd</th>
+      <th></th>
+      <th>Mm</th>
+      <th></th>
+      <th>Yyyy</th>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= client.firstname %></td>
+        <td><%= client.surname %></td>
+        <td><%= client.urn %></td>
+        <td><%= client.dd %></td>
+        <td><%= client.mm %></td>
+        <td><%= client.yyyy %></td>
+        <td><%= link_to 'Show', client %></td>
+        <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client', new_client_path %>

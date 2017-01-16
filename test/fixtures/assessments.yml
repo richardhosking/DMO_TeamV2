@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pulse: MyString
+  : 
+  resps: MyString
+  : 
+  sats: MyString
+  : 
+  temp: MyString
+  : 
+  weight: MyString
+  : 
+  hb: MyString
+  : 
+  gluc: MyString
+  : 
+  systolic: MyString
+  : 
+  diastolic: MyString
+  : 1
+
+two:
+  pulse: MyString
+  : 
+  resps: MyString
+  : 
+  sats: MyString
+  : 
+  temp: MyString
+  : 
+  weight: MyString
+  : 
+  hb: MyString
+  : 
+  gluc: MyString
+  : 
+  systolic: MyString
+  : 
+  diastolic: MyString
+  : 1

@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Assessments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pulse</th>
+      <th></th>
+      <th>Resps</th>
+      <th></th>
+      <th>Sats</th>
+      <th></th>
+      <th>Temp</th>
+      <th></th>
+      <th>Weight</th>
+      <th></th>
+      <th>Hb</th>
+      <th></th>
+      <th>Gluc</th>
+      <th></th>
+      <th>Systolic</th>
+      <th></th>
+      <th>Diastolic</th>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assessments.each do |assessment| %>
+      <tr>
+        <td><%= assessment.pulse %></td>
+        <td><%= assessment.resps %></td>
+        <td><%= assessment.sats %></td>
+        <td><%= assessment.temp %></td>
+        <td><%= assessment.weight %></td>
+        <td><%= assessment.hb %></td>
+        <td><%= assessment.gluc %></td>
+        <td><%= assessment.systolic %></td>
+        <td><%= assessment.diastolic %></td>
+        <td><%= link_to 'Show', assessment %></td>
+        <td><%= link_to 'Edit', edit_assessment_path(assessment) %></td>
+        <td><%= link_to 'Destroy', assessment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Assessment', new_assessment_path %>
