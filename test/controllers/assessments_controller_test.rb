@@ -26,7 +26,7 @@ class AssessmentsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should destroy assessment" do
+ test "should destroy assessment" do
     assert_difference('Assessment.count', -1) do
       delete assessment_url(@assessment)
     end
