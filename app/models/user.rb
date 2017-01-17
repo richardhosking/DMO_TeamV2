@@ -13,4 +13,12 @@ class User < ApplicationRecord
   validates :privileges, presence: true
   PRIVILEGES_CATEGORY = %w(Admin DMO Clinician User Observer) # various user categories to enforce access levels 
   
+  # Class method to return the hash digest of a given string (use in testing fixture)
+  # set computational cost at minimum
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+						  BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+  
 end

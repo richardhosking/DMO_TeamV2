@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :assessments
-  resources :clients
   get 'sessions/new'
 
   get  '/help',    to: 'static_pages#help'
@@ -16,7 +14,8 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   
   resources :users
-  
+  resources :assessments
+  resources :clients
   # Write root route in this format to fix error 
   # ArgumentError (Missing :controller key on routes definition, please check your routes.):
   root :to => 'static_pages#home'
