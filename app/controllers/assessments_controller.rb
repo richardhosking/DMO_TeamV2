@@ -14,7 +14,7 @@ class AssessmentsController < ApplicationController
 
   # GET /assessments/new
   def new
-    @assessment = Assessment.new
+    @assessment = Assessment.new 
   end
 
   # GET /assessments/1/edit

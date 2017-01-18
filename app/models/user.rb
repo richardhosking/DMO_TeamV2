@@ -10,7 +10,7 @@ class User < ApplicationRecord
                     uniqueness: {case_sensitive: false} # prevents two emails with upper and lower case letters 
   
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   
   validates :privileges, presence: true
   PRIVILEGES_CATEGORY = %w(Admin DMO Clinician User Observer) # various user categories to enforce access levels 

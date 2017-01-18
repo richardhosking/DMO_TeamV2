@@ -6,4 +6,10 @@ richard:
   password_digest: <%= User.digest('password') %>
   privileges: user
 
+archer:
+  name: Sterling Archer
+  email: duchess@somedomain.com
+  password_digest: <%= User.digest('differentpassword') %>
+  privileges: user
+
   
