@@ -1,8 +1,11 @@
-User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar",
-             privileges: "admin")
+User.create!(name:  "Richard",
+             email: "richardh@iinet.net.au",
+             password:              "password",
+             password_confirmation: "password",
+             privileges: "admin",
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now)
 
 30.times do |n|
   name  = Faker::Name.name
@@ -12,5 +15,7 @@ User.create!(name:  "Example User",
                email: email,
                password:              password,
                password_confirmation: password,
-               privileges: "admin")
+               privileges: "user",
+               activated: true,
+               activated_at: Time.zone.now)
 end

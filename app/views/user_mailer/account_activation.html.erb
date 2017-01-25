@@ -1,0 +1,8 @@
+<h1>DMO Team Software Account Activation</h1>
+
+<p> 
+  Hi <%= @user.name %> Welcome to the team software app!
+  Click on the link below to activate your account
+</p>
+
+<%= link_to "Activate Account", edit_account_activation_url(@user.activation_token, email: @user.email) %>
