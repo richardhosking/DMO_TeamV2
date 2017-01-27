@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
   
   before_save :downcase_email  # save all email addresses in lowercase
   before_create :create_activation_digest # for activation email link 
@@ -16,8 +16,8 @@ class User < ApplicationRecord
   validates :privileges, presence: true
   PRIVILEGES_CATEGORY = %w(Admin DMO Clinician User Observer) # various user categories to enforce access levels 
   
-  # Class method   post '/signup',  to: 'users#create'to return the hash digest of a given string (use in testing fixture)
-  # set comput  post '/signup',  to: 'users#create'ational cost at minimum
+  # Class method to return the hash digest of a given string (use in testing fixture)
+  # set computational cost at minimum
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
 						  BCrypt::Engine.cost
@@ -57,6 +57,24 @@ class User < ApplicationRecord
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end
+  
+  # Sets password reset attributes
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_attribute(:reset_digest, User.digest(reset_token))
+    update_attribute(:reset_sent_at, Time.zone.now)      
+  end
+  
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+  
+  # Checks that the reset link was not sent more than 2 hours ago - returns true if so 
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
+  end
+  
+  
   
   private
   # uniqueness of email - upper and lower case are equivalent 

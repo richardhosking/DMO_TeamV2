@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   # Write root route in this format to fix error 
   # ArgumentError (Missing :controller key on routes definition, please check your routes.):
   root :to => 'static_pages#home'
@@ -17,6 +21,7 @@ Rails.application.routes.draw do
   
   resources :users
   resources :account_activations, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]  
   resources :assessments
   resources :clients
  
