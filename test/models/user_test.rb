@@ -17,6 +17,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
     
   end
+  
      test "privileges should be present" do
     @user.privileges = "     "
     assert_not @user.valid?
@@ -76,6 +77,14 @@ class UserTest < ActiveSupport::TestCase
 
   test "authenticated? should return false if nil digest" do
     assert_not @user.authenticated?(:remember, '')
+  end
+  
+  test "associated microposts should be destroyed" do
+    @user.save
+    @user.microposts.create!(content: "some content")
+    assert_difference 'Micropost.count', -1 do
+      @user.destroy
+    end
   end
   
 end

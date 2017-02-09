@@ -22,3 +22,6 @@
 
 # Ignore Spring to prevent conflicts between Git and Spring 
 /spring/*.pid
+
+# Ignore uploaded test images.
+/public/uploads
