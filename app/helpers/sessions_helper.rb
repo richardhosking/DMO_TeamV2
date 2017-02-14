@@ -1,5 +1,6 @@
 module SessionsHelper
-  # Methods here are available to all controllers via an include in ApplicationController
+  # Methods here are available to all controllers via an include 
+  # in ApplicationController
   
   # Login a user
   def log_in(user)

@@ -6,7 +6,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     @user = users(:richard)
     @other_user = users(:archer)    
   end
-
+  
   test "should get new" do
     get signup_path
     assert_response :success
@@ -66,9 +66,27 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should redirect destroy when logged in as a non-admin" do
     log_in_as(@other_user)
     assert_no_difference 'User.count' do
-      delete user_path(@other_user)
-    end
+    delete user_path(@other_user)
     assert_redirected_to login_path
+    end
+  end
+  
+   test "feed should have the right posts" do
+    michael = users(:richard)
+    archer  = users(:archer)
+    lana    = users(:lana)
+    # Posts from followed user
+    lana.microposts.each do |post_following|
+      assert michael.feed.include?(post_following)
+    end
+    # Posts from self
+    michael.microposts.each do |post_self|
+      assert michael.feed.include?(post_self)
+    end
+    # Posts from unfollowed user
+    archer.microposts.each do |post_unfollowed|
+      assert_not michael.feed.include?(post_unfollowed)
+    end
   end
   
 end
